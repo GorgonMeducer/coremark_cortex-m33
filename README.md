@@ -1,4 +1,4 @@
-# CoreMark for Cortex-m55(r0p0)
+# CoreMark for Cortex-m33(MPS2 AN505)
 This is a CoreMark project for Cortex-M33 comparing compilers such as gcc, llvm and arm compiler 6.
 
 
