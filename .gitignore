@@ -6,4 +6,5 @@ DebugConfig/*
 *@*
 *.dbgconf
 *.uvgui.*
+*.uvguix.*
 
