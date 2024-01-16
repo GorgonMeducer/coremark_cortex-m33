@@ -9,11 +9,11 @@ This is a CoreMark project for Cortex-M33 comparing compilers such as gcc, llvm 
 
 - Core: **Cortex-M33**
 
-* System Frequency: **25MHz**
+* System Frequency: **20MHz**
 
-* Memory
-  * ITCM: **512 KByte**
-  * DTCM: **512 KByte**
+* Memory (0 wait state)
+  * CODE SRAM: **4MByte**
+  * DATA SRAM: **4MByte**
 
 
 
