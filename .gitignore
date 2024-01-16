@@ -1,0 +1,9 @@
+Objects/*
+Listings/*
+DebugConfig/*
+*.d
+*.o
+*@*
+*.dbgconf
+*.uvgui.*
+
