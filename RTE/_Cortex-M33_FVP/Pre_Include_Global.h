@@ -4,7 +4,7 @@
  *      *** Do not modify ! ***
  *
  * Project: 'lv_template' 
- * Target:  'Cortex-M33_MPS3' 
+ * Target:  'Cortex-M33 FVP' 
  */
 
 #ifndef PRE_INCLUDE_GLOBAL_H

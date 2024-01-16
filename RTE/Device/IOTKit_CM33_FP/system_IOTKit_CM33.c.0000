@@ -1,8 +1,11 @@
-/******************************************************************************
+/**************************************************************************//**
  * @file     system_IOTKit_CM33.c
- * @brief    CMSIS System Source File for IOTKit_CM33 Device
+ * @brief    CMSIS Device System Source File for
+ *           IOTKit_CM33 Device
+ * @version  V1.0.1
+ * @date     15. May 2017
  ******************************************************************************/
-/* Copyright (c) 2015 - 2022 ARM LIMITED
+/* Copyright (c) 2015 - 2017 ARM LIMITED
 
    All rights reserved.
    Redistribution and use in source and binary forms, with or without
@@ -29,9 +32,9 @@
    POSSIBILITY OF SUCH DAMAGE.
    ---------------------------------------------------------------------------*/
 
-#if   defined (IOTKit_CM33)    || defined (IOTKit_CM33_VHT)
+#if defined (IOTKit_CM33)
   #include "IOTKit_CM33.h"
-#elif defined (IOTKit_CM33_FP) || defined (IOTKit_CM33_FP_VHT)
+#elif defined (IOTKit_CM33_FP)
   #include "IOTKit_CM33_FP.h"
 #else
   #error device not specified!
@@ -41,6 +44,9 @@
   #include "partition_IOTKit_CM33.h"
 #endif
 
+extern void *__Vectors;                   /* see startup file */
+
+
 /*----------------------------------------------------------------------------
   Define clocks
  *----------------------------------------------------------------------------*/
@@ -48,36 +54,27 @@
 
 #define  SYSTEM_CLOCK    (XTAL / 2U)
 
-/*----------------------------------------------------------------------------
-  Exception / Interrupt Vector table
- *----------------------------------------------------------------------------*/
-extern const VECTOR_TABLE_Type __VECTOR_TABLE[256];
 
 /*----------------------------------------------------------------------------
   System Core Clock Variable
  *----------------------------------------------------------------------------*/
+__attribute__((used))
 uint32_t SystemCoreClock = SYSTEM_CLOCK;  /* System Core Clock Frequency */
 
-/*----------------------------------------------------------------------------
-  System Core Clock update function
- *----------------------------------------------------------------------------*/
+
 void SystemCoreClockUpdate (void)
 {
   SystemCoreClock = SYSTEM_CLOCK;
 }
 
-/*----------------------------------------------------------------------------
-  System initialization function
- *----------------------------------------------------------------------------*/
 void SystemInit (void)
 {
 #if defined (__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE == 3U)
 //  uint32_t blk_cfg, blk_max, blk_size, blk_cnt;
 #endif
 
-#if defined (__VTOR_PRESENT) && (__VTOR_PRESENT == 1U)
-  SCB->VTOR = (uint32_t) &(__VECTOR_TABLE[0]);
-#endif
+  SCB->VTOR = (uint32_t) &__Vectors;
+
 
 #if defined (__FPU_USED) && (__FPU_USED == 1U)
   SCB->CPACR |= ((3U << 10U*2U) |           /* enable CP10 Full Access */

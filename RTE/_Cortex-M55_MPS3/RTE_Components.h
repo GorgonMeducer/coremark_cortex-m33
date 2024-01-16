@@ -14,7 +14,7 @@
 /*
  * Define the Device Header File: 
  */
-#define CMSIS_device_header "SSE300MPS3.h"
+#define CMSIS_device_header "IOTKit_CM33_FP.h"
 
 /* Keil::Compiler&ARM Compiler:Event Recorder&DAP@1.5.1 */
 #define RTE_Compiler_EventRecorder
