@@ -7,4 +7,6 @@ DebugConfig/*
 *.dbgconf
 *.uvgui.*
 *.uvguix.*
-
+*.00*
+RTE_Components.h
+Pre_Include_Global.h

@@ -344,7 +344,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DbgFMv8M</Key>
-          <Name>-I -S"System Generator:cpu_core" -L"cpu0" -O200710 -C0 -MC".\VHT\VHT_MPS2_Cortex-M33.exe" -MF -PF -MA</Name>
+          <Name>-I -S"System Generator:cpu_core" -L"cpu0" -O200710 -C0 -MC".\VHT\VHT_MPS2_Cortex-M33.exe" -MF"..\..\Work\Git\coremark_cortex-m33\cm33_fvp_cfg.ini" -PF -MA</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>

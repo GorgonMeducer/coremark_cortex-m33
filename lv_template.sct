@@ -3,7 +3,7 @@
 ; *************************************************************
 
 LR_IROM1 0x00000000 0x00200000  {    ; load region size_region
-    ER_IROM1 0x10000000 0x00200000  {  ; load address = execution address
+    ER_IROM1 0x00000000 0x00200000  {  ; load address = execution address
         *.o (RESET, +First)
         *(InRoot$$Sections)
         ;*(Veneer$$CMSE)                   ; check with partition.h

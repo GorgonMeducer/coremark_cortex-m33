@@ -103,7 +103,9 @@ typedef int64_t CORE_TICKS;
 #define COMPILER_FLAGS \
     "Unspecified" /* "Please put compiler flags here (e.g. -o3)" */
 #endif
-
+#ifndef MEM_LOCATION
+#define MEM_LOCATION "STATIC"
+#endif
 
 /* Data Types :
         To avoid compiler issues, define the data types that need ot be used for
@@ -151,16 +153,6 @@ typedef size_t         ee_size_t;
 #ifndef MEM_METHOD
 #define MEM_METHOD MEM_STATIC
 #endif
-
-#undef MEM_LOCATION
-#if     MEM_METHOD == MEM_MALLOC
-#   define MEM_LOCATION "MALLOC"
-#elif   MEM_METHOD == MEM_STATIC
-#   define MEM_LOCATION "STATIC"
-#elif   MEM_METHOD == MEM_STACK
-#   define MEM_LOCATION "STACK"
-#endif
-
 
 /* Configuration : MULTITHREAD
         Define for parallel execution

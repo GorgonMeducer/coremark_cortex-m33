@@ -59,6 +59,7 @@
 /*============================ PROTOTYPES ====================================*/
 /*============================ IMPLEMENTATION ================================*/
 
+__attribute__((used))
 void SysTick_Handler(void)
 {
 #if __IS_COMPILER_GCC__ || __IS_COMPILER_LLVM__
