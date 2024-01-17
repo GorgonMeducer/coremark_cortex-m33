@@ -351,8 +351,8 @@
           <targetInfo name="Cortex-M33_MPS2"/>
         </targetInfos>
       </component>
-      <component Cclass="Utilities" Cgroup="perf_counter" Csub="Core" Cvariant="Source" Cvendor="GorgonMeducer" Cversion="2.2.3" condition="CMSIS-CORE">
-        <package name="perf_counter" schemaVersion="1.7.28" url="https://raw.githubusercontent.com/GorgonMeducer/perf_counter/CMSIS-Pack/cmsis-pack/" vendor="GorgonMeducer" version="2.2.4"/>
+      <component Cclass="Utilities" Cgroup="perf_counter" Csub="Core" Cvariant="Source" Cvendor="GorgonMeducer" Cversion="2.2.5" condition="CMSIS-CORE">
+        <package name="perf_counter" schemaVersion="1.7.28" url="https://raw.githubusercontent.com/GorgonMeducer/perf_counter/CMSIS-Pack/cmsis-pack/" vendor="GorgonMeducer" version="9.9.9"/>
         <targetInfos>
           <targetInfo name="Cortex-M33_MPS2"/>
         </targetInfos>

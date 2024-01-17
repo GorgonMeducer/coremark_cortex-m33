@@ -161,10 +161,11 @@ SECTIONS
     . = ALIGN(4);
     __zero_table_start__ = .;
     /* Add each additional bss section here */
-/*
+
+    /*
     LONG (__bss2_start__)
     LONG ((__bss2_end__ - __bss2_start__) / 4)
-*/
+    */
     __zero_table_end__ = .;
   } > FLASH
 
@@ -231,6 +232,16 @@ SECTIONS
   } > RAM2
 */
 
+  .bss_noinit (NOLOAD):
+  {
+    . = ALIGN(4);
+    __bss_noinit_start__ = .;
+    *(.bss.noinit)
+    *(.bss.noinit.*)
+    . = ALIGN(4);
+    __bss_noinit_end__ = .;
+  } > RAM
+
   .bss :
   {
     . = ALIGN(4);
@@ -241,25 +252,6 @@ SECTIONS
     . = ALIGN(4);
     __bss_end__ = .;
   } > RAM AT > RAM
-
-  /*
-   * Secondary bss section, optional
-   *
-   * Remember to add each additional bss section
-   * to the .zero.table above to asure proper
-   * initialization during startup.
-   */
-/*
-  .bss2 :
-  {
-    . = ALIGN(4);
-    __bss2_start__ = .;
-    *(.bss2)
-    *(.bss2.*)
-    . = ALIGN(4);
-    __bss2_end__ = .;
-  } > RAM2 AT > RAM2
-*/
 
   .heap (COPY) :
   {
