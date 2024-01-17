@@ -21,12 +21,8 @@ This is a CoreMark project for Cortex-M33 comparing compilers such as gcc, llvm 
 
 - [Arm Compiler 6.21](https://developer.arm.com/tools-and-software/embedded/arm-compiler/downloads/version-6)
   - microLib
-
-- [Arm GCC 10.3-2021.10](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
-  - -lc_nano -lnosys
-
-- [LLVM Embedded toolchain for Arm (LLVM 13)](https://github.com/ARM-software/LLVM-embedded-toolchain-for-Arm/releases)
-  - -lc_nano -lnosys
+- [Arm GCC 13.2-rel1](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
+  - -specs=nosys.specs -lc
 
 
 
