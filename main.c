@@ -37,7 +37,9 @@
 /*============================ LOCAL VARIABLES ===============================*/
 /*============================ PROTOTYPES ====================================*/
 /*============================ IMPLEMENTATION ================================*/
-
+/*
+-funroll-loops​ -finline-functions​ --param max-inline-insns-auto=200​ -falign-functions=4​ -falign-jumps=4​ -falign-loops=4​ -fomit-frame-pointer​ -funroll-all-loops​ -finline-limit=10000​ -ftree-dominator-opts​ -fno-if-conversion2​ -fselective-scheduling​ -fno-code-hoisting​ -freorder-blocks-and-partition
+ */
 int main(void)
 {
     __cycleof__() {

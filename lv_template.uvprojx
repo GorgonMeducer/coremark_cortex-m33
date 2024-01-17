@@ -10,14 +10,14 @@
       <TargetName>Cortex-M33_MPS3</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6200001::V6.20.1::.\ArmCompiler6.20.1</pCCUsed>
+      <pCCUsed>6210000::V6.21::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>IOTKit_CM33_FP</Device>
           <Vendor>ARM</Vendor>
-          <PackID>Keil.V2M-MPS2_IOTKit_BSP.1.5.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.V2M-MPS2_IOTKit_BSP.1.5.1</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x38000000,0x00200000) IRAM2(0x28200000,0x00200000) IROM(0x10000000,0x00200000) IROM2(0x00200000,0x00200000) CPUTYPE("Cortex-M33") FPU3(SFPU) DSP TZ CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -452,14 +452,14 @@
       <TargetName>Cortex-M33 FVP</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6200001::V6.20.1::.\ArmCompiler6.20.1</pCCUsed>
+      <pCCUsed>6210000::V6.21::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>IOTKit_CM33_FP</Device>
           <Vendor>ARM</Vendor>
-          <PackID>Keil.V2M-MPS2_IOTKit_BSP.1.5.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.V2M-MPS2_IOTKit_BSP.1.5.1</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x38000000,0x00200000) IRAM2(0x28200000,0x00200000) IROM(0x10000000,0x00200000) IROM2(0x00200000,0x00200000) CPUTYPE("Cortex-M33") FPU3(SFPU) DSP TZ CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -946,7 +946,7 @@
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.2.0" condition="IOTKit_CM33 CMSIS">
-        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
+        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
           <targetInfo name="Cortex-M33 FVP"/>
           <targetInfo name="Cortex-M33_MPS3"/>
@@ -1008,7 +1008,7 @@
       <file attr="config" category="header" name="CMSIS\Config\RTE_Device.h" version="1.0.0">
         <instance index="0">RTE\Device\IOTKit_CM33_FP\RTE_Device.h</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.2.0" condition="IOTKit_CM33 CMSIS"/>
-        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
+        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
           <targetInfo name="Cortex-M33 FVP"/>
           <targetInfo name="Cortex-M33_MPS3"/>
@@ -1017,7 +1017,7 @@
       <file attr="config" category="linkerScript" condition="ARMCC" name="Device\IOTKit_CM33\Source\ARM\ac6_arm.sct" version="1.0.0">
         <instance index="0">RTE\Device\IOTKit_CM33_FP\ac6_arm.sct</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.2.0" condition="IOTKit_CM33 CMSIS"/>
-        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
+        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
           <targetInfo name="Cortex-M33 FVP"/>
           <targetInfo name="Cortex-M33_MPS3"/>
@@ -1026,7 +1026,7 @@
       <file attr="config" category="header" name="Device\IOTKit_CM33\Include\Template\partition_IOTKit_CM33.h" version="1.0.0">
         <instance index="0">RTE\Device\IOTKit_CM33_FP\partition_IOTKit_CM33.h</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.2.0" condition="IOTKit_CM33 CMSIS"/>
-        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
+        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
           <targetInfo name="Cortex-M33 FVP"/>
           <targetInfo name="Cortex-M33_MPS3"/>
@@ -1035,7 +1035,7 @@
       <file attr="config" category="sourceAsm" condition="ARMCC" name="Device\IOTKit_CM33\Source\ARM\startup_IOTKit_CM33.S" version="1.0.3">
         <instance index="0">RTE\Device\IOTKit_CM33_FP\startup_IOTKit_CM33.S</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.2.0" condition="IOTKit_CM33 CMSIS"/>
-        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
+        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
           <targetInfo name="Cortex-M33 FVP"/>
           <targetInfo name="Cortex-M33_MPS3"/>
@@ -1044,7 +1044,7 @@
       <file attr="config" category="sourceC" name="Device\IOTKit_CM33\Source\system_IOTKit_CM33.c" version="1.2.0">
         <instance index="0">RTE\Device\IOTKit_CM33_FP\system_IOTKit_CM33.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.2.0" condition="IOTKit_CM33 CMSIS"/>
-        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="http://www.keil.com/pack/" vendor="Keil" version="1.5.0"/>
+        <package name="V2M-MPS2_IOTKit_BSP" schemaVersion="1.4.9" url="https://www.keil.com/pack/" vendor="Keil" version="1.5.1"/>
         <targetInfos>
           <targetInfo name="Cortex-M33 FVP"/>
           <targetInfo name="Cortex-M33_MPS3"/>
@@ -1212,19 +1212,19 @@
         <package name="lvgl" schemaVersion="1.4" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="1.0.2-alpha1"/>
         <targetInfos/>
       </file>
-      <file attr="config" category="sourceC" name="benchmark\coremark_port\core_portme.c" version="1.1.0">
+      <file attr="config" category="sourceC" name="benchmark\coremark_port\core_portme.c" version="1.1.2">
         <instance index="0">RTE\Utilities\core_portme.c</instance>
-        <component Cclass="Utilities" Cgroup="perf_counter" Csub="Benchmark" Cvariant="Coremark" Cvendor="GorgonMeducer" Cversion="1.1.1" condition="perf_counter"/>
-        <package name="perf_counter" schemaVersion="1.7.28" url="https://raw.githubusercontent.com/GorgonMeducer/perf_counter/CMSIS-Pack/cmsis-pack/" vendor="GorgonMeducer" version="2.2.4"/>
+        <component Cclass="Utilities" Cgroup="perf_counter" Csub="Benchmark" Cvariant="Coremark" Cvendor="GorgonMeducer" Cversion="1.1.2" condition="perf_counter"/>
+        <package name="perf_counter" schemaVersion="1.7.28" url="https://raw.githubusercontent.com/GorgonMeducer/perf_counter/CMSIS-Pack/cmsis-pack/" vendor="GorgonMeducer" version="9.9.9"/>
         <targetInfos>
           <targetInfo name="Cortex-M33 FVP"/>
           <targetInfo name="Cortex-M33_MPS3"/>
         </targetInfos>
       </file>
-      <file attr="config" category="header" name="benchmark\coremark_port\core_portme.h" version="1.1.1">
+      <file attr="config" category="header" name="benchmark\coremark_port\core_portme.h" version="1.1.2">
         <instance index="0">RTE\Utilities\core_portme.h</instance>
-        <component Cclass="Utilities" Cgroup="perf_counter" Csub="Benchmark" Cvariant="Coremark" Cvendor="GorgonMeducer" Cversion="1.1.1" condition="perf_counter"/>
-        <package name="perf_counter" schemaVersion="1.7.28" url="https://raw.githubusercontent.com/GorgonMeducer/perf_counter/CMSIS-Pack/cmsis-pack/" vendor="GorgonMeducer" version="2.2.4"/>
+        <component Cclass="Utilities" Cgroup="perf_counter" Csub="Benchmark" Cvariant="Coremark" Cvendor="GorgonMeducer" Cversion="1.1.2" condition="perf_counter"/>
+        <package name="perf_counter" schemaVersion="1.7.28" url="https://raw.githubusercontent.com/GorgonMeducer/perf_counter/CMSIS-Pack/cmsis-pack/" vendor="GorgonMeducer" version="9.9.9"/>
         <targetInfos>
           <targetInfo name="Cortex-M33 FVP"/>
           <targetInfo name="Cortex-M33_MPS3"/>
