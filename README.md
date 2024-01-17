@@ -38,6 +38,7 @@ This is a CoreMark project for Cortex-M33 comparing compilers such as gcc, llvm 
 | Best Performance | 3.97<br />ROM Size: 29514 |      | 3.34384 | AC6: -Omax +lto;<br />GCC: -Ofast +lto;<br />LLVM uses: -Ofast+lto |
 | -Ofast           | 3.36<br />ROM Size: 25610 |      | 3.46774 |                                                              |
 | -Ofast+lto       | 3.41<br />ROM Size: 23594 |      | 3.34384 |                                                              |
+| -O3              |                           |      | 3.39595 |                                                              |
 | Best Size        |                           |      |         | AC6: -Omin +lto;<br />GCC: -Os +lto;<br />LLVM: -Oz+lto      |
 | -Oz              |                           |      |         | GCC: -Os                                                     |
 | -Oz+lto          |                           |      |         | GCC: -Os + lto                                               |
