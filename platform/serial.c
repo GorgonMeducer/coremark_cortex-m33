@@ -19,9 +19,12 @@
 #include "RTE_Components.h"
 #include "perf_counter.h"
 
-#if defined(RTE_Compiler_EventRecorder)
+#if defined(RTE_Compiler_EventRecorder) || defined(RTE_CMSIS_View_EventRecorder)
 #   include <EventRecorder.h>
 #endif
+
+extern
+int stdout_putchar(int ch);
 
 #if defined(RTE_Compiler_IO_STDOUT_User)
 
@@ -77,9 +80,8 @@ int fputc(int ch, FILE *f)
 
 #endif
 
-#if __IS_COMPILER_GCC__ || __IS_COMPILER_LLVM__
-
-static int stdout_putchar (int ch) {
+#if defined(RTE_Compiler_EventRecorder)
+int stdout_putchar (int ch) {
   static uint32_t index = 0U;
   static uint8_t  buffer[8];
  
@@ -93,6 +95,11 @@ static int stdout_putchar (int ch) {
   }
   return (ch);
 }
+#endif
+
+
+#if __IS_COMPILER_GCC__ || __IS_COMPILER_LLVM__ 
+
 
 __attribute__((section(".text._write"),used))
 /* Redirects gcc printf to UART0 */

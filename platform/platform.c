@@ -101,7 +101,7 @@ void app_platform_init(void)
     
 #if     defined(RTE_Compiler_IO_STDOUT_User)
     serial_init();
-#elif   defined(RTE_Compiler_IO_STDOUT_EVR)
+#elif defined(RTE_Compiler_EventRecorder) || defined(RTE_CMSIS_View_EventRecorder)
     EventRecorderInitialize(0, 1);
 #endif
 }
